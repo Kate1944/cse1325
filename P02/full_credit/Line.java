@@ -19,6 +19,6 @@ public class Line {
 	
 	@Override
 	public String toString() {
-		return color + " (" + x1 + ", " + x2 + ")-(" + y1 + ", " + y2 + ")" + l;
+		return color + " (" + x1 + ", " + x2 + ")-(" + y1 + ", " + y2 + ")";
 	}
 }
