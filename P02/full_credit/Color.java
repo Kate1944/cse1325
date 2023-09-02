@@ -1,1 +1,1 @@
-public enum Color {Fuschia, Saffron, Vermilion, Cerulean}
+public enum Color {FUSCHIA, SAFFRON, VERMILION, CERULEAN}
