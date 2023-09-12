@@ -6,12 +6,13 @@ public class Library {
     }
 
     public addPublication(Publication publication) {
+        publications.add(new Publication("The Bell Jar", "Sylvia Plath", 1963));
 
     }
 
-    public checkOut(int publicationIndex, String patron) {
+    /*public checkOut(int publicationIndex, String patron) {
 
-    }
+    } */
 
     @Override
     String toString () {
@@ -20,5 +21,4 @@ public class Library {
 
     private String name;
     private ArrayList<Publication> publications = new ArrayList<>();
-    
 }

@@ -12,7 +12,7 @@ public class Publication {
         LocalDate now = LocalDate.now();
         LocalDate future = now.plusDays(14);
         LocalDate dueDate = future;
-
+        return dueDate;
     }
 
     /*public checkIn() {
