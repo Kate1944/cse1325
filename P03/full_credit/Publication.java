@@ -19,7 +19,7 @@ public class Publication {
     } */
 
     public String toString() {
-        if((loanedTo.equals(NULL)) == 1) {
+        /*if(loanedTo.equals(NULL)) {
             return "'" + title + "' by " + author + ", copyright " + copyright;
         }
         else {
@@ -27,8 +27,10 @@ public class Publication {
             + copyright + "...This book is loaned to " + loanedTo + "until: " + dueDate;
         }
         
-
-    }
+        */
+        return "'" + title + "' by " + author + ", copyright " + copyright;
+        
+        }
 
     private String title;
     private String author;
