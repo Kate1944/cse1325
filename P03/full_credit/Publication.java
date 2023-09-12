@@ -15,9 +15,9 @@ public class Publication {
 
     }
 
-    public checkIn() {
+    /*public checkIn() {
        
-    }
+    } */
 
     public String toString() {
         if(loanedTo.equals(NULL)) {

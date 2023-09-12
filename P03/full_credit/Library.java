@@ -15,7 +15,7 @@ public class Library {
 
     @Override
     String toString () {
-        
+        return name + "\n\n" + publicationIndex + " " + publications;
     }
 
     private String name;
