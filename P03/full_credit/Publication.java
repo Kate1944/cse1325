@@ -1,4 +1,4 @@
-import java.util.LocalDate;
+import java.time.LocalDate;
 public class Publication {
     public Publication (String title, String author, int copyright) {
         this.title = title;
@@ -7,12 +7,11 @@ public class Publication {
     }
     //TODO: throw IllegalArgumentException
 
-    public checkOut(String patron) {
-        String patron = loanedTo;
+    public void checkOut(String patron) {
+        //String patron = loanedTo;
         LocalDate now = LocalDate.now();
         LocalDate future = now.plusDays(14);
         LocalDate dueDate = future;
-        return dueDate;
     }
 
     /*public checkIn() {
@@ -20,7 +19,7 @@ public class Publication {
     } */
 
     public String toString() {
-        if(loanedTo.equals(NULL)) {
+        if((loanedTo.equals(NULL)) == 1) {
             return "'" + title + "' by " + author + ", copyright " + copyright;
         }
         else {

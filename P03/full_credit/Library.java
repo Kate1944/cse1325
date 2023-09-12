@@ -5,18 +5,17 @@ public class Library {
         this.name = name;
     }
 
-    public addPublication(Publication publication) {
+    public void addPublication(Publication publication) {
         publications.add(new Publication("The Bell Jar", "Sylvia Plath", 1963));
-
     }
 
-    /*public checkOut(int publicationIndex, String patron) {
+    public void checkOut(int publicationIndex, String patron) {
 
-    } */
+    } 
 
     @Override
-    String toString () {
-        return name + "\n\n" + publicationIndex + " " + publications;
+    public String toString () {
+        return name + "\n\n" + "publicationIndex" + " " + publications;
     }
 
     private String name;
