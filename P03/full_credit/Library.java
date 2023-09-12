@@ -6,8 +6,8 @@ public class Library {
     }
 
     public void addPublication(Publication publication) {
-        publications.add(new Publication("The Bell Jar", "Sylvia Plath", 1963));
-    }
+        publications.add(publication);
+    }   
 
     public void checkOut(int publicationIndex, String patron) {
 
