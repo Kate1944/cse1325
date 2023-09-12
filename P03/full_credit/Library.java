@@ -10,12 +10,18 @@ public class Library {
     }   
 
     public void checkOut(int publicationIndex, String patron) {
-
+        //calls checkOut
+        
+        for(int i=0; i<publications.size(); i++) {
+            publicationIndex += 1;
+        }
+        //TODO: revise method (void return type)
     } 
+    
 
     @Override
     public String toString () {
-        return name + "\n\n" + "publicationIndex" + " " + publications;
+        return name + "\n\n" + publications;
     }
 
     private String name;

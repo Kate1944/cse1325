@@ -28,7 +28,7 @@ public class Publication {
         }
         
         */
-        return "'" + title + "' by " + author + ", copyright " + copyright;
+        return "\n" + "'" + title + "' by " + author + ", copyright " + copyright + "\n";
         
         }
 
