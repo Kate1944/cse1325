@@ -8,9 +8,10 @@ under the terms of the Gnu General Public License version 3 or
 
 package mdi;
 
-import java.util.Scanner;
-
 import library.Publication;
+import library.Library;
+import library.Video;
+
 public class LibraryManager {
     public static void main (String[] args) {
         //adds 3 Publications to the Library
@@ -21,10 +22,14 @@ public class LibraryManager {
             library.addPublication(new Publication("The Bell Jar", "Sylvia Plath", 1963));
             library.addPublication(new Publication("Lord of the Flies", "William Golding", 1954));
             library.addPublication(new Publication("1984", "George Orwell", 1949));
+
+            library.addPublication(new Video("Spirited Away", "Hayao Miyazaki", 2001, 125));
+            library.addPublication(new Video("The Silence of the Lambs", "Thomas Harris",1991, 118));
+            library.addPublication(new Video("Bill and Ted's Excellent Adventure", "Chris Matheson and Ed Solomon", 1989, 90));
         
             System.out.println(library);
-            int selection = Integer.parseInt(System.console().readLine("\nWhich book would you like to check out?"));
-            String patron = System.console().readLine("\nWhat's your name?");
+            int selection = Integer.parseInt(System.console().readLine("\nWhich publication would you like to check out? 0,1,2,3,4, or 5? "));
+            String patron = System.console().readLine("\nWhat's your name? ");
             library.checkOut(selection, patron);
             System.out.println(library);
         } catch(Exception e){

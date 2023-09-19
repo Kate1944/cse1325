@@ -7,8 +7,8 @@ under the terms of the Gnu General Public License version 3 or
 */
 
 package library;
-
 import java.time.LocalDate;
+
 public class Publication {
     public static final int LOAN = 14; //days until publication is due
     public Publication (String title, String author, int copyright) {
@@ -29,13 +29,14 @@ public class Publication {
        
     } */
 
+    @Override
     public String toString() {
         if(loanedTo != null) {
-            return "'" + title + "' by " + author + ", copyright " + copyright + 
-            "\n  ...This book is loaned to " + loanedTo + " until: " + dueDate;
+            return "\"" + title + "\" by " + author + ", copyright " + copyright + 
+            "\n  ...This book is loaned to " + loanedTo + " until: " + dueDate + "\n";
         }
         else {
-            return "'" + title + "' by " + author + ", copyright " + copyright;
+            return "\"" + title + "\" by " + author + ", copyright " + copyright + "\n";
         }
         
         
@@ -43,9 +44,9 @@ public class Publication {
         
         }
 
-    private String title;
-    private String author;
-    private int copyright;
-    private String loanedTo;
-    private LocalDate dueDate;
+    protected String title;
+    protected String author;
+    protected int copyright;
+    protected String loanedTo;
+    protected LocalDate dueDate;
 }
