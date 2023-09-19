@@ -7,12 +7,16 @@ under the terms of the Gnu General Public License version 3 or
 */
 package library;
 import java.time.Duration;
+import library.InvalidRuntimeException;
 
 public class Video extends Publication {
 	public Video(String title, String author, int copyright, int runtime){
 		
 		super(title, author, copyright);
 		this.runtime = Duration.ofMinutes(runtime);
+        if(runtime <= 0) {
+            throw new IllegalArgumentException("\n" + title + " has invalid runtime: " + runtime);
+        }
 	}
 	
 
@@ -27,4 +31,14 @@ public String toString() {
 }
 private Duration runtime;
 }
+
+/*public void ArithmeticException() {
+    public void ArithmeticException(String s) {
+        this.s = s;
+    }
+
+    public String s;
+} */
+
+
 
