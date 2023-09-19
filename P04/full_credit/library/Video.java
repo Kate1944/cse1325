@@ -19,10 +19,10 @@ public class Video extends Publication {
 @Override
 public String toString() {
 	if(loanedTo != null) {
-            return "\"" + title + "\" by " + author + ", copyright " + copyright + ", runtime " + runtime + "\n ...This video is loaned to " + loanedTo + " until: " + dueDate + "\n";
+            return "VIDEO: \"" + title + "\" by " + author + ", copyright " + copyright + ", runtime " + runtime.toMinutes() + " minutes" + "\n ...This video is loaned to " + loanedTo + " until: " + dueDate;
         }
         else {
-            return "\"" + title + "\" by " + author + ", copyright " + copyright + ", runtime " + runtime + "\n";
+            return "VIDEO: \"" + title + "\" by " + author + ", copyright " + copyright + ", runtime " + runtime.toMinutes() + " minutes";
         }
 }
 private Duration runtime;

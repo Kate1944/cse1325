@@ -26,7 +26,11 @@ public class Library {
 
     @Override
     public String toString () {
-        return name + "\n\n" + publications;
+        StringBuilder sb = new StringBuilder(name + "\n\n");
+        for(int i = 0; i < publications.size(); i++) {
+            sb.append("" + i + ") " + publications.get(i).toString() + "\n");
+        }
+        return sb.toString();
     }
 
     private String name;

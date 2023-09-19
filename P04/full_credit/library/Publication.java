@@ -32,11 +32,11 @@ public class Publication {
     @Override
     public String toString() {
         if(loanedTo != null) {
-            return "\"" + title + "\" by " + author + ", copyright " + copyright + 
-            "\n  ...This book is loaned to " + loanedTo + " until: " + dueDate + "\n";
+            return "BOOK: \"" + title + "\" by " + author + ", copyright " + copyright + 
+            "\n  ...This book is loaned to " + loanedTo + " until: " + dueDate;
         }
         else {
-            return "\"" + title + "\" by " + author + ", copyright " + copyright + "\n";
+            return "BOOK: \"" + title + "\" by " + author + ", copyright " + copyright;
         }
         
         
