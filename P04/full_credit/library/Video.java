@@ -10,9 +10,8 @@ import java.time.Duration;
 
 public class Video extends Publication {
 	public Video(String title, String author, int copyright, int runtime){
-		this.title = title;
-		this.author = author;
-		this.copyright = copyright;
+		
+		super(title, author, copyright);
 		this.runtime = Duration.ofMinutes(runtime);
 	}
 	
