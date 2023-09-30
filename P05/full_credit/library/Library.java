@@ -15,6 +15,10 @@ public class Library {
         this.name = name;
     }
 
+    //note: attempting to allow Library.java to access checkIn() methods
+    public Video video;
+    public Publication publication = null;
+
     public void addPublication(Publication publication) {
         publications.add(publication);
     }   
@@ -23,6 +27,11 @@ public class Library {
         publications.get(publicationIndex).checkOut(patron);
     } 
     
+    //error: this.publication can't be null
+    public void checkIn() {
+        publication.checkIn();
+        video.checkIn();
+    }
 
     @Override
     public String toString () {

@@ -14,10 +14,32 @@ import library.Video;
 
 public class LibraryManager {
     public static void main (String[] args) {
-        //adds 3 Publications to the Library
-        //asks user to check out a book
-        //prints Library to console twice
+        /*TODO: We want to give these options:
+        1) List all publications and videos in the library
+        2) Add a new publication
+        3) Add a new video
+        4) Check out a publication or video
+        5) Check in a publication or video
+
+        After 1: System.out.println(library);
+        go back to Menu
+        After 2:Ask for title, author, and copyright
+        return to Menu
+        Afer 3: Ask for title, author, copyright, and runtime
+        return to Menu
+        After 4:int selection = Integer.parseInt(System.console().readLine("\nWhich publication would you like to check out? 0,1,2,3,4, or 5? "));
+        String patron = System.console().readLine("\nWhat's your name? ");
+        library.checkOut(selection, patron);
+        return to Menu
+        After 5: 
+        return to Menu 
+        */
+
+        System.out.println("Welcome to the UTA LIbrary! What would you like to do?\n\n\n");
         Library library = new Library("UTA Library");
+        //Video video = new Video(needs parameters)
+        //attempting to use library instead (line 59)
+        
 
         library.addPublication(new Publication("The Bell Jar", "Sylvia Plath", 1963));
         library.addPublication(new Publication("Lord of the Flies", "William Golding", 1954));
@@ -32,8 +54,10 @@ public class LibraryManager {
         int selection = Integer.parseInt(System.console().readLine("\nWhich publication would you like to check out? 0,1,2,3,4, or 5? "));
         String patron = System.console().readLine("\nWhat's your name? ");
         library.checkOut(selection, patron);
-        
+
         System.out.println(library);
+        library.checkIn();
+        //video.checkIn();
         
     }
 }

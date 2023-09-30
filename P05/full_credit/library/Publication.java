@@ -25,9 +25,10 @@ public class Publication {
         dueDate = LocalDate.now().plusDays(LOAN);
     }
 
-    /*public checkIn() {
-       
-    } */
+    public void checkIn() {
+       loanedTo = null;
+       System.out.println("Thank you for returning: \"" + title + "\" by " + author + ", copyright " + copyright);
+    } 
 
     @Override
     public String toString() {
