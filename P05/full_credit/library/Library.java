@@ -16,8 +16,8 @@ public class Library {
     }
 
     //note: attempting to allow Library.java to access checkIn() methods
-    public Video video;
-    public Publication publication = null;
+    /*public Video video;
+    public Publication publication = null; */
 
     public void addPublication(Publication publication) {
         publications.add(publication);
@@ -28,9 +28,10 @@ public class Library {
     } 
     
     //error: this.publication can't be null
-    public void checkIn() {
-        publication.checkIn();
-        video.checkIn();
+    public void checkIn(int publicationIndex) {
+        publications.get(publicationIndex).checkIn();
+        //publication.checkIn();
+        //video.checkIn();
     }
 
     @Override

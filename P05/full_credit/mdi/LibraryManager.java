@@ -56,7 +56,7 @@ public class LibraryManager {
         library.checkOut(selection, patron);
 
         System.out.println(library);
-        library.checkIn();
+        library.checkIn(selection);
         //video.checkIn();
         
     }

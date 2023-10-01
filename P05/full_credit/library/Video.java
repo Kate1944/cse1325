@@ -25,11 +25,11 @@ public class Video extends Publication {
         }
 	}
 
-    public void checkIn() {
+    /*public void checkIn() {
         loanedTo = null;
         System.out.println("Thank you for returning: \"" 
         + title + "\" by " + author + ", copyright " + copyright + "runtime " + runtime.toMinutes() + "minutes");
-    }
+    } */
 	
 
 @Override
