@@ -34,30 +34,59 @@ public class LibraryManager {
         After 5: 
         return to Menu 
         */
+        while(true) {
+            try {
 
-        System.out.println("Welcome to the UTA LIbrary! What would you like to do?\n\n\n");
-        Library library = new Library("UTA Library");
-        //Video video = new Video(needs parameters)
-        //attempting to use library instead (line 59)
-        
+                Library library = new Library("\nUTA Library");
 
-        library.addPublication(new Publication("The Bell Jar", "Sylvia Plath", 1963));
-        library.addPublication(new Publication("Lord of the Flies", "William Golding", 1954));
-        library.addPublication(new Publication("1984", "George Orwell", 1949));
+                System.out.println("Welcome to the UTA LIbrary! What would you like to do?\n\n\n");
+                System.out.println("0 - list all publications and videos");
+                System.out.println("1 - add a new publication");
+                System.out.println("2 - add a new video");
+                System.out.println("3 - check out a publication or video");
+                System.out.println("4 - check in a publication or video");
+                
+                int select = Integer.parseInt(System.console().readLine("\n(press 9 to exit)\nSelection: "));
+                if(select == 9) {
+                    break;
+                }
+                if(select == 0) {
 
-        library.addPublication(new Video("Spirited Away", "Hayao Miyazaki", 2001, 125));
-        library.addPublication(new Video("The Silence of the Lambs", "Thomas Harris",1991, 118));
-        library.addPublication(new Video("Bill and Ted's Excellent Adventure", "Chris Matheson and Ed Solomon", 1989, 90));
-        
-        System.out.println(library);
+                    //Video video = new Video(needs parameters)
+                    //attempting to use library instead (line 59)
+                    
 
-        int selection = Integer.parseInt(System.console().readLine("\nWhich publication would you like to check out? 0,1,2,3,4, or 5? "));
-        String patron = System.console().readLine("\nWhat's your name? ");
-        library.checkOut(selection, patron);
+                    library.addPublication(new Publication("The Bell Jar", "Sylvia Plath", 1963));
+                    library.addPublication(new Publication("Lord of the Flies", "William Golding", 1954));
+                    library.addPublication(new Publication("1984", "George Orwell", 1949));
 
-        System.out.println(library);
-        library.checkIn(selection);
-        //video.checkIn();
-        
+                    library.addPublication(new Video("Spirited Away", "Hayao Miyazaki", 2001, 125));
+                    library.addPublication(new Video("The Silence of the Lambs", "Thomas Harris",1991, 118));
+                    library.addPublication(new Video("Bill and Ted's Excellent Adventure", "Chris Matheson and Ed Solomon", 1989, 90));
+                    System.out.println(library);
+                }
+                if(select == 3) {
+
+                    System.out.println(library);
+                    int selection = Integer.parseInt(System.console().readLine("\nWhich publication would you like to check out? 0,1,2,3,4, or 5? "));
+                    String patron = System.console().readLine("\nWhat's your name? ");
+                    library.checkOut(selection, patron);
+
+                    System.out.println(library);
+                    
+                }
+                if(select == 4) {
+                    System.out.println(library);
+                    int selection = Integer.parseInt(System.console().readLine("\nWhat would you like to return?"));
+                    library.checkIn(selection);
+                }
+
+                }
+                catch (Exception e) {
+                    System.err.println("Invalid selection " + e);
+                }
+
+            }
+    
     }
 }
