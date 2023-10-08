@@ -11,6 +11,7 @@ package mdi;
 import library.Publication;
 import library.Library;
 import library.Video;
+import java.util.Scanner;
 
 public class LibraryManager {
     public static void main (String[] args) {
@@ -68,8 +69,10 @@ public class LibraryManager {
                 if(select == 3) {
 
                     System.out.println(library);
+                    Scanner in = new Scanner(System.in);
                     int selection = Integer.parseInt(System.console().readLine("\nWhich publication would you like to check out? 0,1,2,3,4, or 5? "));
-                    String patron = System.console().readLine("\nWhat's your name? ");
+                    System.out.println("What's your name? ");
+                    String patron = in.nextLine();
                     library.checkOut(selection, patron);
 
                     System.out.println(library);
