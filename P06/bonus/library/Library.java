@@ -8,6 +8,7 @@ under the terms of the Gnu General Public License version 3 or
 
 package library;
 
+import java.io.BufferedWriter;
 import java.util.ArrayList;
 public class Library {
 
@@ -15,6 +16,11 @@ public class Library {
         this.name = name;
         this.publications = new ArrayList<>();
         this.patrons = new ArrayList<>();
+    }
+
+    public void save(BufferedWriter bw) throws IOException {
+        bw.write(name + '\n');
+        //write for publications and patrons arraylist
     }
 
     public void addPublication(Publication publication) {

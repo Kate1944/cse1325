@@ -29,8 +29,22 @@ public class Publication {
         bw.write(title + '\n');
         bw.write(author + '\n');
         bw.write("" + copyright + '\n');
-        bw.write("" + loanedTo + '\n');
-        bw.write("" + dueDate + '\n');
+        //bw.write("" + loanedTo + '\n');
+        //bw.write("" + dueDate + '\n');
+        if(loanedTo = null) {
+            bw.write("Checked in" + '\n');
+        }
+        else {
+            bw.write("Checked out" + '\n');
+            loanedTo.save(bw);
+            int year = dueDate.getYear();
+            int month = dueDate.getMonthValue();
+            int day = dueDate.getDayOfMonth();
+            bw.write("" + year + 'n');
+            bw.write("" + month + '\n');
+            bw.write("" + day + '\n');
+            //dueDate
+        }
     }
 
     public void checkOut(Patron patron) {
