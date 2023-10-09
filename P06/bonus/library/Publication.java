@@ -8,6 +8,11 @@ under the terms of the Gnu General Public License version 3 or
 
 package library;
 import java.time.LocalDate;
+import java.io.BufferedWriter;
+import java.io.BufferedReader;
+import java.io.FileWriter;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class Publication {
     public static final int LOAN = 14; //days until publication is due
@@ -18,6 +23,14 @@ public class Publication {
         if(copyright < 1900 || copyright > LocalDate.now().getYear()) {
             throw new IllegalArgumentException("Invalid copyright year: " + copyright);
         }
+    }
+
+    public void save(BufferedWriter bw) throws IOException{
+        bw.write(title + '\n');
+        bw.write(author + '\n');
+        bw.write("" + copyright + '\n');
+        bw.write("" + loanedTo + '\n');
+        bw.write("" + dueDate + '\n');
     }
 
     public void checkOut(Patron patron) {

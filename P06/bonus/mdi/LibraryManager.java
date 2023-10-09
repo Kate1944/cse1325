@@ -91,6 +91,21 @@ public class LibraryManager {
 
     }
 
+    public void saveLibrary() {
+        String filename = "test.lms";
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(filename))){
+            library.save(bw);
+        }
+        catch (Exception e) {
+            System.err.println("Failed to write: " + e);
+            System.exit(-1);
+        }
+    }
+
+    public void openLibrary() {
+
+    }
+
 
     public static void main (String[] args) {
    
@@ -116,6 +131,8 @@ public class LibraryManager {
                 System.out.println("4 - add a new patron");
                 System.out.println("5 - check out a publication or video");
                 System.out.println("6 - check in a publication or video");
+                System.out.println("7 - save library");
+                System.out.println("8 - open library");
                 
                 int select = Integer.parseInt(console.readLine("\n(press 9 to exit)\nSelection: "));
                 if(select == 9) {
@@ -148,6 +165,14 @@ public class LibraryManager {
 
                 if(select == 6) {
                     lm.checkInPublication();
+                }
+
+                if(select == 7) {
+                    lm.saveLibrary();
+                }
+
+                if(select == 8) {
+                    lm.openLibrary();
                 }
 
                 }
