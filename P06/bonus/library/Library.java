@@ -13,25 +13,44 @@ public class Library {
 
     public Library (String name) {
         this.name = name;
+        this.publications = new ArrayList<>();
+        this.patrons = new ArrayList<>();
     }
-
-    //note: attempting to allow Library.java to access checkIn() methods
-    /*public Video video;
-    public Publication publication = null; */
 
     public void addPublication(Publication publication) {
         publications.add(publication);
     }   
 
-    public void checkOut(int publicationIndex, String patron) {
-        publications.get(publicationIndex).checkOut(patron);
+    public void addPatron(Patron patron) {
+        patrons.add(patron);
+    }
+
+    public String patronMenu() {
+        StringBuilder sb = new StringBuilder("Patrons:\n");
+        for(int i=0; i<patrons.size(); i++) {
+            sb.append("" + i + ") " + patrons.get(i).toString() + "\n");
+        }
+        return sb.toString();
+    }
+
+    public void checkOut(int publicationIndex, int patronIndex) {
+        try {
+            publications.get(publicationIndex).checkOut(patrons.get(patronIndex));
+        }
+        catch(Exception e) {
+            System.err.println("\n Unable to checkout index: " + publicationIndex + ""
+            + e.getMessage() + "\n");
+        }
     } 
     
-    //error: this.publication can't be null
     public void checkIn(int publicationIndex) {
-        publications.get(publicationIndex).checkIn();
-        //publication.checkIn();
-        //video.checkIn();
+        try {
+            publications.get(publicationIndex).checkIn();
+        }
+        catch(Exception e) {
+            System.err.println("\n Unable to check in index: " + publicationIndex + ""
+            + e.getMessage() + "\n");
+        }
     }
 
     @Override
@@ -44,5 +63,6 @@ public class Library {
     }
 
     private String name;
-    private ArrayList<Publication> publications = new ArrayList<>();
+    private ArrayList<Publication> publications;
+    private ArrayList<Patron> patrons;
 }

@@ -12,6 +12,7 @@ import java.time.Duration;
 public class Video extends Publication {
 
     public class InvalidRuntimeException extends ArithmeticException {
+         
         public InvalidRuntimeException(String title, int runtime) {
             super(title + " has invalid runtime " + runtime);
         }
@@ -25,32 +26,13 @@ public class Video extends Publication {
         }
 	}
 
-    /*public void checkIn() {
-        loanedTo = null;
-        System.out.println("Thank you for returning: \"" 
-        + title + "\" by " + author + ", copyright " + copyright + "runtime " + runtime.toMinutes() + "minutes");
-    } */
-	
-
 @Override
 public String toString() {
-	if(loanedTo != null) {
-            return "VIDEO: \"" + title + "\" by " + author + ", copyright " + copyright + ", runtime " + runtime.toMinutes() + " minutes" + "\n ...This video is loaned to " + loanedTo + " until: " + dueDate;
-        }
-        else {
-            return "VIDEO: \"" + title + "\" by " + author + ", copyright " + copyright + ", runtime " + runtime.toMinutes() + " minutes";
-        }
+    return toStringBuilder("Video", ", runtime " + runtime.toMinutes() + " minutes");
 }
 private Duration runtime;
 }
 
-/*public void ArithmeticException() {
-    public void ArithmeticException(String s) {
-        this.s = s;
-    }
-
-    public String s;
-} */
 
 
 

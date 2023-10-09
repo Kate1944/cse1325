@@ -11,77 +11,143 @@ package mdi;
 import library.Publication;
 import library.Library;
 import library.Video;
-import java.util.Scanner;
+import library.Patron;
+
+import java.io.Console;
 
 public class LibraryManager {
-    public static void main (String[] args) {
-        /*TODO: We want to give these options:
-        1) List all publications and videos in the library
-        2) Add a new publication
-        3) Add a new video
-        4) Check out a publication or video
-        5) Check in a publication or video
+    public LibraryManager(Library library) {
+        this.library = library;
+    }
 
-        After 1: System.out.println(library);
-        go back to Menu
-        After 2:Ask for title, author, and copyright
-        return to Menu
-        Afer 3: Ask for title, author, copyright, and runtime
-        return to Menu
-        After 4:int selection = Integer.parseInt(System.console().readLine("\nWhich publication would you like to check out? 0,1,2,3,4, or 5? "));
-        String patron = System.console().readLine("\nWhat's your name? ");
-        library.checkOut(selection, patron);
-        return to Menu
-        After 5: 
-        return to Menu 
-        */
+    public void listPublications() {
+        //System.out.println("--------Library inventory--------\n");
+        System.out.println();
+        System.out.println(library);
+    }
+
+    public void addPublication() {
+        String title = console.readLine("What's the title? ");
+        if (title.isEmpty()) {
+            return;
+        }
+        String author = console.readLine("Who is the author? ");
+        if (author.isEmpty()) {
+            return;
+        }
+        int copyright = Integer.parseInt(console.readLine("When is the copyright? (year) "));
+        Publication p = null;
+        p = new Publication(title, author, copyright);
+        library.addPublication(p);
+    }
+
+    public void addVideo() {
+        String title = console.readLine("What's the video title? ");
+        if (title.isEmpty()) {
+            return;
+        }
+        String author = console.readLine("Who is the author? ");
+        if (author.isEmpty()) {
+            return;
+        }
+        int copyright = Integer.parseInt(console.readLine("When is the copyright? (year) "));
+        String runtime = console.readLine("How long is the runtime? (minutes) ");
+        if (runtime.isEmpty()) {
+            return;
+        }
+        Video v = null;
+        v = new Video(title, author, copyright, Integer.parseInt(runtime));
+        library.addPublication(v);
+    }
+
+    public void checkOutPublication() {
+        System.out.println(library);
+        int index = Integer.parseInt(console.readLine("\nWhich publication would you like to check out?" ));
+        int patron = Integer.parseInt(console.readLine(library.patronMenu() + "What's your name? "));
+        library.checkOut(index, patron);
+    }
+
+    public void checkInPublication() {
+        System.out.println(library);
+        int index = Integer.parseInt(console.readLine("Selection: "));
+        library.checkIn(index);
+    }
+
+    public void listPatrons() {
+        System.out.println("--------Patrons--------\n");
+        System.out.println(library.patronMenu());
+    }
+
+    public void addPatron() {
+        String name = console.readLine("What is your name? ");
+        if(name.isEmpty()) {
+            return;
+        }
+        String email = console.readLine("What is your email? ");
+        if(email.isEmpty()) {
+            return;
+        }
+        library.addPatron(new Patron(name, email));
+
+    }
+
+
+    public static void main (String[] args) {
+   
+        LibraryManager lm = new LibraryManager(new Library(name));
+        
         while(true) {
             try {
 
-                Library library = new Library("\nUTA Library");
+                /*Library library = new Library("UTA Library");
+                library.addPublication(new Publication("The Bell Jar", "Sylvia Plath", 1963));
+                library.addPublication(new Publication("Lord of the Flies", "William Golding", 1954));
+                library.addPublication(new Publication("1984", "George Orwell", 1949));
 
-                System.out.println("Welcome to the UTA LIbrary! What would you like to do?\n\n\n");
+                library.addPublication(new Video("Spirited Away", "Hayao Miyazaki", 2001, 125));
+                library.addPublication(new Video("The Silence of the Lambs", "Thomas Harris",1991, 118));
+                library.addPublication(new Video("Bill and Ted's Excellent Adventure", "Chris Matheson and Ed Solomon", 1989, 90));
+        */
+                System.out.println("\nWelcome to the UTA LIbrary! What would you like to do?\n\n");
                 System.out.println("0 - list all publications and videos");
-                System.out.println("1 - add a new publication");
-                System.out.println("2 - add a new video");
-                System.out.println("3 - check out a publication or video");
-                System.out.println("4 - check in a publication or video");
+                System.out.println("1 - list all patrons");
+                System.out.println("2 - add a new publication");
+                System.out.println("3 - add a new video");
+                System.out.println("4 - add a new patron");
+                System.out.println("5 - check out a publication or video");
+                System.out.println("6 - check in a publication or video");
                 
-                int select = Integer.parseInt(System.console().readLine("\n(press 9 to exit)\nSelection: "));
+                int select = Integer.parseInt(console.readLine("\n(press 9 to exit)\nSelection: "));
                 if(select == 9) {
                     break;
                 }
+
                 if(select == 0) {
-
-                    //Video video = new Video(needs parameters)
-                    //attempting to use library instead (line 59)
-                    
-
-                    library.addPublication(new Publication("The Bell Jar", "Sylvia Plath", 1963));
-                    library.addPublication(new Publication("Lord of the Flies", "William Golding", 1954));
-                    library.addPublication(new Publication("1984", "George Orwell", 1949));
-
-                    library.addPublication(new Video("Spirited Away", "Hayao Miyazaki", 2001, 125));
-                    library.addPublication(new Video("The Silence of the Lambs", "Thomas Harris",1991, 118));
-                    library.addPublication(new Video("Bill and Ted's Excellent Adventure", "Chris Matheson and Ed Solomon", 1989, 90));
-                    System.out.println(library);
+                    lm.listPublications();  
                 }
+
+                if(select == 1) {
+                    lm.listPatrons();  
+                }
+
+                if(select == 2) {
+                    lm.addPublication();
+                }
+
                 if(select == 3) {
-
-                    System.out.println(library);
-                    Scanner in = new Scanner(System.in);
-                    int selection = Integer.parseInt(System.console().readLine("\nWhich publication would you like to check out? 0,1,2,3,4, or 5? "));
-                    System.out.println("What's your name? ");
-                    String patron = in.nextLine();
-                    library.checkOut(selection, patron);
-
-                    System.out.println(library);
-                    
+                    lm.addVideo();
                 }
+
                 if(select == 4) {
-                    System.out.println(library);
-                    int selection = Integer.parseInt(System.console().readLine("\nWhat would you like to return?"));
-                    library.checkIn(selection);
+                    lm.addPatron();
+                }
+
+                if(select == 5) {
+                    lm.checkOutPublication();  
+                }
+
+                if(select == 6) {
+                    lm.checkInPublication();
                 }
 
                 }
@@ -92,4 +158,8 @@ public class LibraryManager {
             }
     
     }
+    private static Console console = System.console();
+    private static final String name = "The UTA library";
+    //private static final String menu = "\n --------Main menu--------\n" + name + "\n\n";
+    private Library library;
 }

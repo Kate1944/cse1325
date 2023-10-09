@@ -20,34 +20,32 @@ public class Publication {
         }
     }
 
-    public void checkOut(String patron) {
+    public void checkOut(Patron patron) {
         loanedTo = patron;
         dueDate = LocalDate.now().plusDays(LOAN);
     }
 
     public void checkIn() {
        loanedTo = null;
-       System.out.println("Thank you for returning: \"" + title + "\" by " + author + ", copyright " + copyright);
+       dueDate = null;
+       System.out.println("Return successful!");
+       //System.out.println("Thank you for returning: \"" + title + "\" by " + author + ", copyright " + copyright);
     } 
+
+    protected String toStringBuilder(String pre, String mid) {
+        return pre + " \"" + title + "\" by " + author + ", copyright " + copyright 
+        + mid + ((loanedTo != null) ? "\n     : loaned to " + loanedTo + " until " + dueDate 
+                                    : "");
+    }
 
     @Override
     public String toString() {
-        if(loanedTo != null) {
-            return "BOOK: \"" + title + "\" by " + author + ", copyright " + copyright + 
-            "\n  ...This book is loaned to " + loanedTo + " until: " + dueDate;
-        }
-        else {
-            return "BOOK: \"" + title + "\" by " + author + ", copyright " + copyright;
-        }
-        
-        
-        //return "\n" + "'" + title + "' by " + author + ", copyright " + copyright + "\n";
-        
+            return toStringBuilder("Book", "");
         }
 
-    protected String title;
-    protected String author;
-    protected int copyright;
-    protected String loanedTo;
-    protected LocalDate dueDate;
+    private String title;
+    private String author;
+    private int copyright;
+    private Patron loanedTo;
+    private LocalDate dueDate;
 }
