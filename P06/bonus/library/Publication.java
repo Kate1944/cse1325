@@ -30,8 +30,7 @@ public class Publication {
         bw.write(title + '\n');
         bw.write(author + '\n');
         bw.write("" + copyright + '\n');
-        //bw.write("" + loanedTo + '\n');
-        //bw.write("" + dueDate + '\n');
+    
         if(loanedTo == null) {
             bw.write("Checked in" + '\n');
         }
@@ -39,11 +38,12 @@ public class Publication {
             bw.write("Checked out" + '\n');
             loanedTo.save(bw);
             int year = dueDate.getYear();
-            int month = dueDate.getMonthValue();
+            int month = dueDate.getMonthValue(); 
             int day = dueDate.getDayOfMonth();
             bw.write("" + year + '\n');
             bw.write("" + month + '\n');
             bw.write("" + day + '\n');
+            //LocalDate d = LocalDate.of(year, month, day);
 
         }
     }
@@ -52,9 +52,15 @@ public class Publication {
         this.author = br.readLine();
         this.copyright = Integer.parseInt(br.readLine());
         loanedTo = new Patron(br);
-        this.year = Integer.parseInt(br.readLine());
-        this.month = Integer.parseInt(br.readLine());
-        this.day = Integer.parseInt(br.readLine());
+        
+        int year = Integer.parseInt(br.readLine());
+        int month = Integer.parseInt(br.readLine());
+        int day = Integer.parseInt(br.readLine());
+        //LocalDate d = LocalDate.of(year, month, day);
+        //LocalDate d = new LocalDate.of(year, month, day);
+        dueDate = LocalDate.of(year, month, day);
+        //dueDate = new LocalDate(d);
+        
     } 
 
     public void checkOut(Patron patron) {
