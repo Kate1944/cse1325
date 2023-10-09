@@ -13,6 +13,12 @@ import library.Library;
 import library.Video;
 import library.Patron;
 
+import java.io.BufferedWriter;
+import java.io.BufferedReader;
+import java.io.FileWriter;
+import java.io.FileReader;
+import java.io.IOException;
+
 import java.io.Console;
 
 public class LibraryManager {

@@ -23,6 +23,7 @@ public class Publication {
         if(copyright < 1900 || copyright > LocalDate.now().getYear()) {
             throw new IllegalArgumentException("Invalid copyright year: " + copyright);
         }
+    
     }
 
     public void save(BufferedWriter bw) throws IOException{
@@ -31,7 +32,7 @@ public class Publication {
         bw.write("" + copyright + '\n');
         //bw.write("" + loanedTo + '\n');
         //bw.write("" + dueDate + '\n');
-        if(loanedTo = null) {
+        if(loanedTo == null) {
             bw.write("Checked in" + '\n');
         }
         else {
@@ -43,9 +44,18 @@ public class Publication {
             bw.write("" + year + 'n');
             bw.write("" + month + '\n');
             bw.write("" + day + '\n');
-            //dueDate
+
         }
     }
+    public Publication(BufferedReader br) throws IOException {
+        this.title = br.readLine();
+        this.author = br.readLine();
+        this.copyright = Integer.parseInt(br.readLine());
+        loanedTo = new Patron(br);
+        this.year = Integer.parseInt(br.readLine());
+        this.month = Integer.parseInt(br.readLine());
+        this.day = Integer.parseInt(br.readLine());
+    } 
 
     public void checkOut(Patron patron) {
         loanedTo = patron;
