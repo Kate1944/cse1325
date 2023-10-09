@@ -41,7 +41,7 @@ public class Publication {
             int year = dueDate.getYear();
             int month = dueDate.getMonthValue();
             int day = dueDate.getDayOfMonth();
-            bw.write("" + year + 'n');
+            bw.write("" + year + '\n');
             bw.write("" + month + '\n');
             bw.write("" + day + '\n');
 
@@ -66,7 +66,6 @@ public class Publication {
        loanedTo = null;
        dueDate = null;
        System.out.println("Return successful!");
-       //System.out.println("Thank you for returning: \"" + title + "\" by " + author + ", copyright " + copyright);
     } 
 
     protected String toStringBuilder(String pre, String mid) {
