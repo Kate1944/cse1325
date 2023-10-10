@@ -87,9 +87,9 @@ public class Publication {
             return toStringBuilder("Book", "");
         }
 
-    private String title;
-    private String author;
-    private int copyright;
-    private Patron loanedTo;
-    private LocalDate dueDate;
+    protected String title;
+    protected String author;
+    protected int copyright;
+    protected Patron loanedTo;
+    protected LocalDate dueDate;
 }

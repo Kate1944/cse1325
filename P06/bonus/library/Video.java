@@ -32,12 +32,16 @@ public class Video extends Publication {
 	}
 
     public void save(BufferedWriter bw) throws IOException {
-        //super(title, author, copyright) = 
+        super.save(bw);
+        long minutes = runtime.toMinutes();
+        bw.write("" + minutes + '\n');
     }
 
-    /*public Video(BufferedReader br) throws IOException {
-
-    }*/
+    public Video(BufferedReader br) throws IOException {
+        super(title, author, copyright);
+        long minutes = Integer.parseInt(br.readLine());
+        runtime = Duration.ofMinutes(minutes);
+    }
 
 @Override
 public String toString() {
