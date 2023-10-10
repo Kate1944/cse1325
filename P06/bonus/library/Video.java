@@ -39,6 +39,9 @@ public class Video extends Publication {
 
     public Video(BufferedReader br) throws IOException {
         super(title, author, copyright);
+        super.title = br.readLine();
+        super.author = br.readLine();
+        super.copyright = Integer.parseInt(br.readLine());
         long minutes = Integer.parseInt(br.readLine());
         runtime = Duration.ofMinutes(minutes);
     }
