@@ -109,9 +109,18 @@ public class LibraryManager {
     }
 
     public void openLibrary() {
+        String filename = "test.lms";
+        //Library lib = null;
+        try(BufferedReader br = new BufferedReader(new FileReader(filename))) {
+            Library lib = new Library(br);
+            lib = library;
+        }
+        catch (Exception e) {
+            System.err.println("Failed to read: " + e);
+            System.exit(-2);
+        }
 
     }
-
 
     public static void main (String[] args) {
    

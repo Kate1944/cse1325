@@ -53,15 +53,20 @@ public class Publication {
         this.title = br.readLine();
         this.author = br.readLine();
         this.copyright = Integer.parseInt(br.readLine());
-        loanedTo = new Patron(br);
-        
-        int year = Integer.parseInt(br.readLine());
-        int month = Integer.parseInt(br.readLine());
-        int day = Integer.parseInt(br.readLine());
+        if (br.readLine().equals("Checked in")) {
+            loanedTo = null;
+            dueDate = null;
+        }
+        else {
+            loanedTo = new Patron(br);
+            int year = Integer.parseInt(br.readLine());
+            int month = Integer.parseInt(br.readLine());
+            int day = Integer.parseInt(br.readLine());
         //LocalDate d = LocalDate.of(year, month, day);
         //LocalDate d = new LocalDate.of(year, month, day);
-        dueDate = LocalDate.of(year, month, day);
+            dueDate = LocalDate.of(year, month, day);
         //dueDate = new LocalDate(d);
+        }
         
     } 
 
