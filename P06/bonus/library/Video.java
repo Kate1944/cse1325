@@ -6,8 +6,13 @@ under the terms of the Gnu General Public License version 3 or
 (at your option) any later version, see <https://www.gnu.org/licenses/>.
 */
 package library;
-
 import java.time.Duration;
+
+import java.io.BufferedWriter;
+import java.io.BufferedReader;
+import java.io.FileWriter;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class Video extends Publication {
 
@@ -25,6 +30,14 @@ public class Video extends Publication {
             throw new InvalidRuntimeException(title, runtime);
         }
 	}
+
+    public void save(BufferedWriter bw) throws IOException {
+        //super(title, author, copyright) = 
+    }
+
+    /*public Video(BufferedReader br) throws IOException {
+
+    }*/
 
 @Override
 public String toString() {

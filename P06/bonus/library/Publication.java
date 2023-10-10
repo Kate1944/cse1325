@@ -8,6 +8,7 @@ under the terms of the Gnu General Public License version 3 or
 
 package library;
 import java.time.LocalDate;
+
 import java.io.BufferedWriter;
 import java.io.BufferedReader;
 import java.io.FileWriter;
@@ -48,6 +49,7 @@ public class Publication {
         }
     }
     public Publication(BufferedReader br) throws IOException {
+        //TODO: add if condition for null loanedTo
         this.title = br.readLine();
         this.author = br.readLine();
         this.copyright = Integer.parseInt(br.readLine());

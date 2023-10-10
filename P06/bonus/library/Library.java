@@ -25,8 +25,43 @@ public class Library {
 
     public void save(BufferedWriter bw) throws IOException {
         bw.write(name + '\n');
-        //write for publications and patrons arraylist
 
+        bw.write("" + publications.size() + '\n');
+        for (Publication i : publications) {
+            if(i instanceof Publication) {
+                bw.write("publication" + '\n');
+                i.save(bw);
+            }
+            else {
+                bw.write("video" + '\n');
+                i.save(bw);
+            //bw.write("" + i + '\n');  
+        }
+
+        bw.write("" + patrons.size() + '\n');
+        for (Patron j : patrons) {
+            //bw.write("" + j + '\n');
+            j.save(bw);
+        }
+
+        }
+
+    }
+
+    public Library(BufferedReader br) throws IOException {
+        this.name = br.readLine();
+        int sizePub = Integer.parseInt(br.readLine()); //size of publications arraylist
+        publications = new ArrayList<>();
+        while(sizePub-- > 0) {
+            
+            publications.toString().add(br.readLine());
+        }
+
+        int sizePat = Integer.parseInt(br.readLine()); //size of patrons arraylist
+        patrons = new ArrayList<>();
+        while(sizePat-- > 0) {
+            patrons.toString().add(br.readLine());
+        }
     }
 
     public void addPublication(Publication publication) {
