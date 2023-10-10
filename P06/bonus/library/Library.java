@@ -53,15 +53,22 @@ public class Library {
         int sizePub = Integer.parseInt(br.readLine()); //size of publications arraylist
         publications = new ArrayList<>();
         while(sizePub-- > 0) {
+            for (Publication i : publications) {
+                if(i instanceof Publication) {
+                    publications.add(new Publication(br));
+                }
+                else {
+                    publications.add(new Video(br)); 
+            }
             
-            publications.toString().add(br.readLine());
         }
 
         int sizePat = Integer.parseInt(br.readLine()); //size of patrons arraylist
         patrons = new ArrayList<>();
         while(sizePat-- > 0) {
-            patrons.toString().add(br.readLine());
+            patrons.add(new Patron(br));
         }
+    }
     }
 
     public void addPublication(Publication publication) {
