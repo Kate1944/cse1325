@@ -2,12 +2,12 @@ FULL CREDIT
 ===========
 
 QUESTION 1: Why is String[] args changed to a LinkedList in WordSearch.main? (Hint: Examine the WordSearch constructor!)
-
+The WordSearch class imports java.util.List so that we can collect the strings provided by the file given in the command line argument into a sequence. However, this doesn't eliminate the risk of duplicate strings.
 
 
 
 QUESTION 2: How many puzzles did your machine need to solve with 1 thread to run for between 30 and 45 seconds: 
-
+1000 seconds took me about 38 seconds.
 
 
 
@@ -42,7 +42,12 @@ sys	0m0.229s
 
 
 YOUR Timing:
+100 puzzles with 1 threads
+Thread 0: 0-99
 
+real	0m34.617s
+user	0m21.547s
+sys	0m0.317s
 
 
 
@@ -50,14 +55,14 @@ YOUR Timing:
 
 
 QUESTION 3: Does adding more threads continue to speed up the program? Do more threads ever slow down the program even slightly?  Why or why not?
-
+Couldn't figure it out, but I would say yes based on what I've been able to accomplish. There is a certain point where too many threads compete to run a method causing interference/interruptions. A mutex might help.
 
 
 
 
 
 QUESTION 4: Does adding more threads increase the "system load" (sys), or is it constant regardless of the number of threads?  Why?
-
+Theoretically, I would say no. Since each thread is operating an independent execution, each process would amount to a fraction of the load shared amongst however many threads specified. 
 
 
 

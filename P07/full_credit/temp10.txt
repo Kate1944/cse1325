@@ -1,400 +1,204 @@
-In puzzle25.txt: ADHERENTS found at (33,11,S)
-In puzzle25.txt: CIVVIESS found at (48,39,NE)
-In puzzle25.txt: HALTERED found at (73,47,NW)
-In puzzle25.txt: MOURNS found at (37,44,NE)
-In puzzle25.txt: SAFFRONS found at (51,39,NE)
-In puzzle25.txt: ADMINISTERING found at (54,4,E)
-In puzzle25.txt: CODEPENDENTS found at (43,13,N)
-In puzzle25.txt: HARLEQUIN found at (29,42,N)
-In puzzle25.txt: MULTITUDINOUS found at (50,1,E)
-In puzzle25.txt: SALTPETER found at (38,29,S)
-In puzzle25.txt: ADMISSION found at (63,28,E)
-In puzzle25.txt: COLLINS found at (21,24,SE)
-In puzzle25.txt: HARTMANS found at (73,47,S)
-In puzzle25.txt: MUTATIONS found at (36,32,E)
-In puzzle25.txt: SCALAWAGS found at (63,39,W)
-In puzzle25.txt: ADVERSARIAL found at (44,6,W)
-In puzzle25.txt: COMPENDIA found at (65,14,NE)
-In puzzle25.txt: HEINES found at (59,16,S)
-In puzzle25.txt: NARROWNESS found at (49,20,W)
-In puzzle25.txt: SELECTMAN found at (44,16,W)
-In puzzle25.txt: ALIBI found at (43,18,NE)
-In puzzle25.txt: CONDEMNING found at (64,25,S)
-In puzzle25.txt: HIKED found at (62,17,N)
-In puzzle25.txt: NEATH found at (27,11,NW)
-In puzzle25.txt: SENTINEL found at (37,34,E)
-In puzzle25.txt: ANALGESIC found at (66,8,SE)
-In puzzle25.txt: CONFIDENTIALLY found at (54,10,E)
-In puzzle25.txt: HUYGENSS found at (28,9,SW)
-In puzzle25.txt: NOBLEMAN found at (72,37,SW)
-In puzzle25.txt: SHACKLED found at (42,23,SW)
-In puzzle25.txt: ANNULMENT found at (26,36,E)
-In puzzle25.txt: CONTRARIES found at (49,9,N)
-In puzzle25.txt: IDEALISTICALLY found at (54,1,S)
-In puzzle25.txt: NOISES found at (49,17,N)
-In puzzle25.txt: SHANTUNGS found at (27,5,S)
-In puzzle25.txt: ANTHROPOLOGYS found at (54,11,SW)
-In puzzle25.txt: CONTUSION found at (74,39,NW)
-In puzzle25.txt: IMMIGRANTS found at (64,4,SE)
-In puzzle25.txt: NONSMOKING found at (38,24,SE)
-In puzzle25.txt: SIDDHARTHA found at (63,15,NE)
-In puzzle25.txt: APPETIZER found at (27,29,E)
-In puzzle25.txt: COQUETTE found at (32,19,W)
-In puzzle25.txt: IMPRECATIONS found at (61,8,W)
-In puzzle25.txt: NORTHEASTS found at (56,32,N)
-In puzzle25.txt: SLACKENED found at (33,25,W)
-In puzzle25.txt: ASPIRATED found at (19,18,SE)
-In puzzle25.txt: COVINGTON found at (74,39,SW)
-In puzzle25.txt: INDELICACYS found at (58,29,SE)
-In puzzle25.txt: NOSEDIVING found at (47,30,N)
-In puzzle25.txt: SOLES found at (44,12,W)
-In puzzle25.txt: AUTUMN found at (57,32,SW)
-In puzzle25.txt: CRANNY found at (23,33,N)
-In puzzle25.txt: INSOMNIAC found at (70,37,SW)
-In puzzle25.txt: OPPRESSES found at (53,27,S)
-In puzzle25.txt: SOLILOQUIZES found at (46,14,W)
-In puzzle25.txt: BACONS found at (44,18,E)
-In puzzle25.txt: CREEPINESSS found at (58,27,E)
-In puzzle25.txt: INSURANCES found at (66,30,S)
-In puzzle25.txt: OPTICIANS found at (34,35,W)
-In puzzle25.txt: SPONGE found at (56,16,SE)
-In puzzle25.txt: BAITED found at (36,33,S)
-In puzzle25.txt: CUFFED found at (57,41,S)
-In puzzle25.txt: INVERSIONS found at (63,7,W)
-In puzzle25.txt: ORIFICES found at (47,18,NW)
-In puzzle25.txt: SPRINGIEST found at (44,9,W)
-In puzzle25.txt: BANKRUPTCY found at (36,5,SW)
-In puzzle25.txt: CURIES found at (50,3,E)
-In puzzle25.txt: ISRAELS found at (36,47,NW)
-In puzzle25.txt: OVERDRIVE found at (64,36,SE)
-In puzzle25.txt: STANDISH found at (52,40,N)
-In puzzle25.txt: BARNUM found at (47,38,S)
-In puzzle25.txt: DENIZENS found at (21,19,SE)
-In puzzle25.txt: JETTYS found at (61,24,NE)
-In puzzle25.txt: OVERREACHING found at (50,12,S)
-In puzzle25.txt: STEPDAUGHTERS found at (61,26,NW)
-In puzzle25.txt: BARTER found at (29,16,SW)
-In puzzle25.txt: DENSITYS found at (69,46,SW)
-In puzzle25.txt: KENNETHS found at (72,39,N)
-In puzzle25.txt: OZYMANDIAS found at (39,17,SW)
-In puzzle25.txt: TACITUS found at (61,12,SW)
-In puzzle25.txt: BATTALIONS found at (36,5,W)
-In puzzle25.txt: DINGINESSS found at (68,20,S)
-In puzzle25.txt: KINDERGARTENER found at (64,6,SW)
-In puzzle25.txt: PAINTS found at (22,18,NE)
-In puzzle25.txt: TALLNESS found at (58,34,SW)
-In puzzle25.txt: BEASTLYS found at (31,39,SW)
-In puzzle25.txt: DISCOVERIES found at (44,23,W)
-In puzzle25.txt: KUWAITS found at (46,44,N)
-In puzzle25.txt: PAIRING found at (72,4,W)
-In puzzle25.txt: TEETERED found at (45,19,W)
-In puzzle25.txt: BEATNIKS found at (39,8,W)
-In puzzle25.txt: DOWNIER found at (62,48,NE)
-In puzzle25.txt: LAMPSHADES found at (62,2,E)
-In puzzle25.txt: PAPAS found at (22,18,NW)
-In puzzle25.txt: TENANT found at (46,31,NW)
-In puzzle25.txt: BEDSPREADS found at (28,21,E)
-In puzzle25.txt: DRAGONFLYS found at (43,17,W)
-In puzzle25.txt: LANGLANDS found at (36,22,W)
-In puzzle25.txt: PASSES found at (46,21,S)
-In puzzle25.txt: TENDONS found at (45,4,W)
-In puzzle25.txt: BEETLES found at (19,38,NE)
-In puzzle25.txt: DREAMY found at (28,47,NW)
-In puzzle25.txt: LIQUEURS found at (23,34,SE)
-In puzzle25.txt: PATTY found at (49,43,N)
-In puzzle25.txt: TENTING found at (71,36,N)
-In puzzle25.txt: BERMS found at (37,36,SW)
-In puzzle25.txt: EQUIP found at (54,15,NE)
-In puzzle25.txt: MADAGASCARS found at (51,17,SW)
-In puzzle25.txt: PAYROLLS found at (18,27,E)
-In puzzle25.txt: TERSENESS found at (54,30,SW)
-In puzzle25.txt: BETTERED found at (30,6,SW)
-In puzzle25.txt: ERIKS found at (54,3,SW)
-In puzzle25.txt: MADELINES found at (73,5,S)
-In puzzle25.txt: PEASANT found at (43,35,SE)
-In puzzle25.txt: TESTAMENT found at (34,13,SW)
-In puzzle25.txt: BIGFOOTS found at (24,28,E)
-In puzzle25.txt: ESPECIAL found at (41,42,NE)
-In puzzle25.txt: MAETERLINCK found at (59,22,S)
-In puzzle25.txt: PECKED found at (37,26,W)
-In puzzle25.txt: THORIUMS found at (29,6,SE)
-In puzzle25.txt: BODHIDHARMA found at (67,13,W)
-In puzzle25.txt: EXACTITUDES found at (43,19,NW)
-In puzzle25.txt: MALFUNCTION found at (35,31,NE)
-In puzzle25.txt: PELLETS found at (39,0,SW)
-In puzzle25.txt: THYMI found at (61,12,S)
-In puzzle25.txt: BOSOM found at (69,5,W)
-In puzzle25.txt: FABIANS found at (20,25,N)
-In puzzle25.txt: MALLARDS found at (57,20,SW)
-In puzzle25.txt: PEOPLE found at (48,31,E)
-In puzzle25.txt: TOPSIDE found at (36,40,W)
-In puzzle25.txt: BOURGEOIS found at (43,33,E)
-In puzzle25.txt: FABRIC found at (55,11,W)
-In puzzle25.txt: MARIAS found at (71,37,NW)
-In puzzle25.txt: PITCHFORKS found at (62,11,NE)
-In puzzle25.txt: TOQUES found at (73,39,S)
-In puzzle25.txt: BRANCH found at (72,16,NW)
-In puzzle25.txt: FARMING found at (59,38,W)
-In puzzle25.txt: MARJORAM found at (31,38,SW)
-In puzzle25.txt: PLACENTAL found at (28,10,S)
-In puzzle25.txt: TORSOS found at (31,29,SW)
-In puzzle25.txt: BRAQUES found at (36,39,E)
-In puzzle25.txt: FENDED found at (58,44,SW)
-In puzzle25.txt: MCCALL found at (37,44,SE)
-In puzzle25.txt: PREFABRICATION found at (58,11,W)
-In puzzle25.txt: TRAILWAYS found at (63,31,S)
-In puzzle25.txt: BREACHES found at (50,36,W)
-In puzzle25.txt: FOOTPATH found at (64,23,NE)
-In puzzle25.txt: MEGACHURCH found at (50,1,W)
-In puzzle25.txt: PROLOG found at (60,51,N)
-In puzzle25.txt: TREACLES found at (68,45,S)
-In puzzle25.txt: BRIDGETTS found at (33,27,W)
-In puzzle25.txt: FORESIGHTS found at (51,32,NW)
-In puzzle25.txt: MERINO found at (20,32,SE)
-In puzzle25.txt: QUINTUPLE found at (70,40,S)
-In puzzle25.txt: TRUMPETS found at (48,2,SE)
-In puzzle25.txt: BROWSE found at (26,4,S)
-In puzzle25.txt: FRESHLY found at (41,8,E)
-In puzzle25.txt: MESCALINE found at (37,15,NW)
-In puzzle25.txt: REASON found at (58,26,E)
-In puzzle25.txt: TURKEYS found at (55,19,SW)
-In puzzle25.txt: BULLFINCH found at (36,33,NE)
-In puzzle25.txt: FRONTIERSMANS found at (48,15,N)
-In puzzle25.txt: MESSY found at (24,34,E)
-In puzzle25.txt: REFULGENT found at (71,19,S)
-In puzzle25.txt: UNITYS found at (32,7,NW)
-In puzzle25.txt: CATHOLICISMS found at (56,12,SE)
-In puzzle25.txt: FRUMPIER found at (61,22,NE)
-In puzzle25.txt: MICROLOANS found at (63,14,E)
-In puzzle25.txt: REJOINDERS found at (40,19,SW)
-In puzzle25.txt: UNLIKELIHOODS found at (46,2,S)
-In puzzle25.txt: CHAPLIN found at (30,14,N)
-In puzzle25.txt: GAMBOLING found at (60,12,S)
-In puzzle25.txt: MIDDLEWEIGHT found at (36,10,E)
-In puzzle25.txt: RELINQUISH found at (48,30,N)
-In puzzle25.txt: WALLPAPERS found at (34,2,E)
-In puzzle25.txt: CHARITYS found at (61,41,N)
-In puzzle25.txt: GEYSER found at (37,11,E)
-In puzzle25.txt: MILLILITER found at (32,28,S)
-In puzzle25.txt: REPELLENTS found at (62,37,N)
-In puzzle25.txt: WHALING found at (60,40,S)
-In puzzle25.txt: CHEYENNE found at (61,41,S)
-In puzzle25.txt: GONDOLAS found at (33,1,SW)
-In puzzle25.txt: MIRFAK found at (33,31,NE)
-In puzzle25.txt: REPRESSIONS found at (53,15,SE)
-In puzzle25.txt: WHEELCHAIRS found at (40,21,SW)
-In puzzle25.txt: CHOICEST found at (61,41,W)
-In puzzle25.txt: GREASED found at (26,28,SW)
-In puzzle25.txt: MIRIAMS found at (33,45,NW)
-In puzzle25.txt: RESONATE found at (62,50,NE)
-In puzzle25.txt: WINDBREAKER found at (51,29,N)
-In puzzle25.txt: CHURCHYARDS found at (74,22,NW)
-In puzzle25.txt: GRUNTS found at (65,25,E)
-In puzzle25.txt: MISFIT found at (70,52,W)
-In puzzle25.txt: RHYTHMICAL found at (52,24,SE)
-In puzzle25.txt: WITHHELD found at (61,2,W)
-In puzzle25.txt: CIRCUITRYS found at (63,16,S)
-In puzzle25.txt: HALLSTATTS found at (69,17,S)
-In puzzle25.txt: MISHAP found at (16,28,NE)
-In puzzle25.txt: RULES found at (52,4,NW)
-In puzzle25.txt: ZEPPELIN found at (37,35,SE)
-In puzzle26.txt: AMARANTH found at (53,40,S)
-In puzzle26.txt: DISCONTINUOUS found at (39,15,NE)
-In puzzle26.txt: LAURELS found at (52,43,N)
-In puzzle26.txt: ROGUES found at (58,16,NE)
-In puzzle26.txt: AMORAL found at (51,15,NW)
-In puzzle26.txt: DISENTANGLEMENT found at (36,24,E)
-In puzzle26.txt: LUMBERS found at (72,20,N)
-In puzzle26.txt: RUINOUSLY found at (47,15,NW)
-In puzzle26.txt: ANGLERS found at (23,16,S)
-In puzzle26.txt: DISMAYS found at (26,3,S)
-In puzzle26.txt: MACKERELS found at (62,3,SW)
-In puzzle26.txt: RULINGS found at (56,30,N)
-In puzzle26.txt: APPELLATIONS found at (61,18,NE)
-In puzzle26.txt: DISPOSSESSED found at (60,25,NE)
-In puzzle26.txt: MAINLY found at (55,28,SW)
-In puzzle26.txt: RUTHERFORDS found at (52,35,SE)
-In puzzle26.txt: APPOINTEE found at (31,23,SE)
-In puzzle26.txt: EDITH found at (61,23,NE)
-In puzzle26.txt: MANIACS found at (51,9,N)
-In puzzle26.txt: SALISBURYS found at (40,12,NW)
-In puzzle26.txt: ASPIDISKE found at (48,46,W)
-In puzzle26.txt: EDNAS found at (42,16,SW)
-In puzzle26.txt: MANTELS found at (35,48,NE)
-In puzzle26.txt: SALONS found at (65,28,SE)
-In puzzle26.txt: ATTAINS found at (64,47,W)
-In puzzle26.txt: EMBEZZLERS found at (40,31,SW)
-In puzzle26.txt: MARCONI found at (19,6,SE)
-In puzzle26.txt: SEDIMENTS found at (39,14,W)
-In puzzle26.txt: AUGUR found at (42,5,NE)
-In puzzle26.txt: EMPLOYE found at (70,15,S)
-In puzzle26.txt: MARKUPS found at (32,3,SW)
-In puzzle26.txt: SEISMOLOGYS found at (53,10,N)
-In puzzle26.txt: AURELIO found at (26,23,NW)
-In puzzle26.txt: ENCHANTMENTS found at (46,42,NE)
-In puzzle26.txt: MARS found at (50,7,S)
-In puzzle26.txt: SELLOUT found at (58,51,E)
-In puzzle26.txt: BACKGROUND found at (69,25,W)
-In puzzle26.txt: EQUESTRIENNES found at (50,23,E)
-In puzzle26.txt: MCBRIDE found at (66,0,W)
-In puzzle26.txt: SERIES found at (33,8,SW)
-In puzzle26.txt: BAKER found at (48,48,E)
-In puzzle26.txt: EQUINOX found at (44,20,SW)
-In puzzle26.txt: MCDANIEL found at (25,25,E)
-In puzzle26.txt: SHAKEUPS found at (60,42,E)
-In puzzle26.txt: BAYOU found at (63,37,NE)
-In puzzle26.txt: ESTERHAZYS found at (47,32,SW)
-In puzzle26.txt: MICKIE found at (31,21,W)
-In puzzle26.txt: SIDECAR found at (23,22,NW)
-In puzzle26.txt: BECALMING found at (43,31,N)
-In puzzle26.txt: EXTINGUISHERS found at (53,23,N)
-In puzzle26.txt: MINUTENESS found at (69,24,N)
-In puzzle26.txt: SILLS found at (36,50,SE)
-In puzzle26.txt: BEHAVES found at (29,34,SW)
-In puzzle26.txt: FABERGE found at (56,54,NE)
-In puzzle26.txt: MITIGATE found at (31,21,NW)
-In puzzle26.txt: SNAPS found at (67,31,NE)
-In puzzle26.txt: BEHOLD found at (44,36,SW)
-In puzzle26.txt: FEELS found at (60,46,E)
-In puzzle26.txt: MORALES found at (32,34,N)
-In puzzle26.txt: SOYINKA found at (60,42,W)
-In puzzle26.txt: BENNETT found at (27,35,E)
-In puzzle26.txt: FEUDALISM found at (40,3,W)
-In puzzle26.txt: MOSSES found at (34,28,W)
-In puzzle26.txt: SPELLER found at (26,32,E)
-In puzzle26.txt: BICENTENNIALS found at (64,18,N)
-In puzzle26.txt: FOREHAND found at (73,5,SW)
-In puzzle26.txt: MOUSSES found at (38,19,N)
-In puzzle26.txt: SPRAIN found at (29,31,W)
-In puzzle26.txt: BOVINE found at (39,16,NE)
-In puzzle26.txt: FRINGES found at (23,25,SE)
-In puzzle26.txt: MUGGER found at (29,15,SW)
-In puzzle26.txt: SQUIBB found at (34,36,N)
-In puzzle26.txt: BOXES found at (48,51,NE)
-In puzzle26.txt: GALAPAGOSS found at (54,32,SW)
-In puzzle26.txt: MUTILATING found at (47,14,SW)
-In puzzle26.txt: STATED found at (25,7,N)
-In puzzle26.txt: BRADBURYS found at (64,44,NW)
-In puzzle26.txt: GATING found at (23,4,E)
-In puzzle26.txt: NONINTERVENTIONS found at (50,28,NE)
-In puzzle26.txt: STATUETTES found at (45,41,SW)
-In puzzle26.txt: BRAHMAGUPTAS found at (55,32,N)
-In puzzle26.txt: GENERICS found at (44,3,E)
-In puzzle26.txt: NOSED found at (18,27,E)
-In puzzle26.txt: STEAMROLLERING found at (51,25,NW)
-In puzzle26.txt: BREASTS found at (73,20,S)
-In puzzle26.txt: GIMLET found at (35,39,NW)
-In puzzle26.txt: OBJECTS found at (26,13,NE)
-In puzzle26.txt: SUCKS found at (44,50,S)
-In puzzle26.txt: BRIGHAM found at (61,14,SW)
-In puzzle26.txt: GLENS found at (20,14,SE)
-In puzzle26.txt: OBSESSES found at (29,40,E)
-In puzzle26.txt: SUFFOCATED found at (58,8,E)
-In puzzle26.txt: BUCHWALD found at (38,33,S)
-In puzzle26.txt: GOOFS found at (49,30,S)
-In puzzle26.txt: ORBITALS found at (69,52,NW)
-In puzzle26.txt: SURGE found at (22,12,S)
-In puzzle26.txt: BUMMERS found at (59,40,N)
-In puzzle26.txt: GOUDA found at (60,33,S)
-In puzzle26.txt: OVERABUNDANCES found at (42,28,N)
-In puzzle26.txt: SURVEY found at (37,2,SE)
-In puzzle26.txt: CALKS found at (32,23,W)
-In puzzle26.txt: GRANGE found at (53,39,SE)
-In puzzle26.txt: OVERWORKS found at (73,32,NW)
-In puzzle26.txt: SUSPENDING found at (35,24,W)
-In puzzle26.txt: CALUMNIATING found at (44,7,SE)
-In puzzle26.txt: GRETA found at (18,15,SW)
-In puzzle26.txt: PANNING found at (58,29,SE)
-In puzzle26.txt: SYBILS found at (28,13,SE)
-In puzzle26.txt: CAPELLA found at (44,8,W)
-In puzzle26.txt: GROOVY found at (53,2,W)
-In puzzle26.txt: PARDONED found at (72,9,SW)
-In puzzle26.txt: TANKARDS found at (73,33,NW)
-In puzzle26.txt: CELLISTS found at (36,10,NW)
-In puzzle26.txt: HAIRDRESSER found at (58,28,E)
-In puzzle26.txt: PASTIER found at (62,6,NW)
-In puzzle26.txt: TEMPTINGLY found at (38,22,W)
-In puzzle26.txt: CHANDLER found at (24,8,S)
-In puzzle26.txt: HAYDN found at (17,18,NE)
-In puzzle26.txt: PATHS found at (36,43,SE)
-In puzzle26.txt: TENURING found at (45,36,SW)
-In puzzle26.txt: CHILDCARES found at (41,10,W)
-In puzzle26.txt: HAZARDOUS found at (49,39,SE)
-In puzzle26.txt: PAUSED found at (27,32,NW)
-In puzzle26.txt: TITHED found at (61,1,W)
-In puzzle26.txt: CHRISTENINGS found at (53,31,E)
-In puzzle26.txt: HOCKED found at (65,19,W)
-In puzzle26.txt: PHOTOGRAPHERS found at (56,12,S)
-In puzzle26.txt: TORPEDO found at (43,35,SW)
-In puzzle26.txt: CLASSROOMS found at (63,4,W)
-In puzzle26.txt: HOMOGENIZES found at (67,35,NW)
-In puzzle26.txt: PITYING found at (67,49,W)
-In puzzle26.txt: TOWS found at (73,36,NW)
-In puzzle26.txt: COMBUSTIBLES found at (48,16,NE)
-In puzzle26.txt: HORSEPLAYS found at (42,38,SE)
-In puzzle26.txt: PLUNDERS found at (36,26,SE)
-In puzzle26.txt: TRISTANS found at (52,4,S)
-In puzzle26.txt: COMPRESSES found at (71,24,N)
-In puzzle26.txt: HOTPOINTS found at (74,36,NW)
-In puzzle26.txt: POINTERS found at (36,31,SW)
-In puzzle26.txt: TROIKA found at (52,36,SE)
-In puzzle26.txt: CONFIDANTS found at (65,0,S)
-In puzzle26.txt: HUBRIS found at (70,43,W)
-In puzzle26.txt: POLYSTYRENES found at (46,32,N)
-In puzzle26.txt: TROLLOPE found at (23,26,E)
-In puzzle26.txt: CONGRESSES found at (42,17,SW)
-In puzzle26.txt: IAGOS found at (54,30,N)
-In puzzle26.txt: PRIMPED found at (35,11,NW)
-In puzzle26.txt: TRYSTING found at (38,27,NW)
-In puzzle26.txt: CONTAGIONS found at (35,33,N)
-In puzzle26.txt: IMPETUOUSLY found at (48,36,E)
-In puzzle26.txt: PROPITIATING found at (59,2,SW)
-In puzzle26.txt: TURNKEYS found at (32,14,NW)
-In puzzle26.txt: COORDINATION found at (68,3,S)
-In puzzle26.txt: IMPRINT found at (64,40,SE)
-In puzzle26.txt: RAINFALLS found at (63,28,SE)
-In puzzle26.txt: TYRONE found at (64,22,NE)
-In puzzle26.txt: CORNEAL found at (65,17,NE)
-In puzzle26.txt: INDICATED found at (37,15,S)
-In puzzle26.txt: RALLYS found at (42,45,E)
-In puzzle26.txt: UNMENTIONABLES found at (59,22,N)
-In puzzle26.txt: CORPORALS found at (63,19,N)
-In puzzle26.txt: INFORMING found at (30,20,NE)
-In puzzle26.txt: RANGINESS found at (24,20,SE)
-In puzzle26.txt: UNUSABLE found at (46,34,E)
-In puzzle26.txt: CREAMS found at (48,0,E)
-In puzzle26.txt: INVENTOR found at (49,20,S)
-In puzzle26.txt: RECITATIVE found at (43,36,SE)
-In puzzle26.txt: UPLIFTING found at (45,22,S)
-In puzzle26.txt: CROSSROADSS found at (42,17,NW)
-In puzzle26.txt: JARGON found at (28,33,E)
-In puzzle26.txt: RECOUNTS found at (45,40,SE)
-In puzzle26.txt: UTTER found at (50,29,NW)
-In puzzle26.txt: DABS found at (42,20,SW)
-In puzzle26.txt: JOSHS found at (61,34,W)
-In puzzle26.txt: REDIRECTED found at (37,12,N)
-In puzzle26.txt: VAPORIZATIONS found at (74,23,W)
-In puzzle26.txt: DEBORA found at (21,23,E)
-In puzzle26.txt: KATRINAS found at (52,13,SW)
-In puzzle26.txt: RELAYS found at (39,45,SE)
-In puzzle26.txt: VILAS found at (45,17,NW)
-In puzzle26.txt: DEBUNKING found at (36,20,N)
-In puzzle26.txt: KEATONS found at (47,6,SW)
-In puzzle26.txt: REQUIRE found at (66,9,N)
-In puzzle26.txt: VITUPERATED found at (48,29,N)
-In puzzle26.txt: DECREED found at (27,20,W)
-In puzzle26.txt: KROPOTKINS found at (45,11,SE)
-In puzzle26.txt: RESTORATIVES found at (61,28,NW)
-In puzzle26.txt: WATERMARKS found at (49,38,SW)
-In puzzle26.txt: DEPROGRAMMED found at (48,32,W)
-In puzzle26.txt: LADINGS found at (35,42,E)
-In puzzle26.txt: REUNIFIES found at (47,33,N)
-In puzzle26.txt: WITTINESS found at (42,2,SE)
-In puzzle26.txt: DESOLATING found at (50,35,SE)
-In puzzle26.txt: LAMPBLACKS found at (72,20,S)
-In puzzle26.txt: RINGLETS found at (67,9,NE)
-In puzzle26.txt: WOOZIER found at (32,45,N)
-In puzzle26.txt: DEVILS found at (26,27,E)
-In puzzle26.txt: LATCH found at (43,5,E)
-In puzzle26.txt: RIVALING found at (35,2,SW)
-In puzzle26.txt: YANKING found at (72,8,SW)
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0
+i: 0

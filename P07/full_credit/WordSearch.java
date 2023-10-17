@@ -73,7 +73,7 @@ public class WordSearch {
     // vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
     // Modify THIS method to divide up the puzzles among your threads!
     // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    public void solve() {
+    public void solve() throws InterruptedException{
         System.err.println ("\n" + NUM_PUZZLES + " puzzles with " 
             + NUM_THREADS + " threads"); // Show the # puzzles and threads
         // Solve all puzzles
@@ -83,6 +83,7 @@ public class WordSearch {
     public void solve(int threadID, int firstPuzzle, int lastPuzzlePlusOne) {
         System.err.println("Thread " + threadID + ": " + firstPuzzle + "-" + (lastPuzzlePlusOne-1));
         for(int i=firstPuzzle; i<lastPuzzlePlusOne; ++i) {
+            synchronized(lock) {
             Puzzle p = puzzles.get(i);
             Solver solver = new Solver(p);
             for(String word : p.getWords()) {
@@ -95,15 +96,37 @@ public class WordSearch {
                         + " for " + word + ": " + e.getMessage());
                 }
             }
+            }
         }
         
         // -------- All Puzzles Solved --------
+        Thread[] threads = new Thread[NUM_THREADS];
+        //threadID = 0;
+        for(int i = 0; i<NUM_THREADS; i++) {
+            //threadID = i;
+            //firstPuzzle = 
+            threads[i] = new Thread(
+                ()->solve(threadID, firstPuzzle, lastPuzzlePlusOne));
+            System.out.println("i: " + i);
+            threads[i].start();
+        }
+
+        for(int i = 0; i<NUM_THREADS; i++) {
+         
+            try {
+                threads[i].join();
+            } catch (InterruptedException e) {
+               System.err.println("failed to join " + e);
+            }
+            
+        }
     }
     public void printSolutions() {
         for(Solution s : solutions)
             System.out.println(s);
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
+
         WordSearch ws = new WordSearch(new LinkedList<>(Arrays.asList(args)));
         ws.solve();
         if(ws.verbose) ws.printSolutions();
@@ -112,7 +135,9 @@ public class WordSearch {
     public final int NUM_THREADS;
     public final int NUM_PUZZLES;
     public final boolean verbose;
+    //public final int threadID;
 
     private List<Puzzle> puzzles = new ArrayList<>();;
     private List<Solution> solutions = new ArrayList<>();
+    private static Object lock = new Object();
 }
