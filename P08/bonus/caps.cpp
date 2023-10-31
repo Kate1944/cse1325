@@ -7,17 +7,17 @@
 //caps on the stack
 //no_caps on the heap
 int main (int args, char* argv) {
-    //std::string current{argv[1]};
-    //getline(cin, s1);
+    
+    std::string begin{argv[1]};
     std::vector<char> caps;
-    std::vector<char> no_caps;
-
+    std::vector<char>* no_caps = new std::vector<char>;
+    
     for(int i=2; i<args; i++) {
         if (isupper(argv[i])) {
             caps.push_back(argv[i]);
         }
         else {
-            no_caps.push_back(argv[i]);
+            no_caps->push_back(argv[i]);
         }
     }
 
@@ -27,7 +27,7 @@ int main (int args, char* argv) {
     }
 
     std::cout << "Lower Case:\n";
-    for(auto i : no_caps) {
+    for(auto i : *no_caps) {
         std::cout << i << std::endl;
     }
 
