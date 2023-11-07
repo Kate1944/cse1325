@@ -1,7 +1,7 @@
 #ifndef __CIRCLE
 #define __CIRCLE
 
-class Circle {
+class Circle : public Shape {
     public:
         Circle(double radius);
         std::string name();

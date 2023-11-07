@@ -13,6 +13,7 @@ class Shape {
 
         virtual std::string to_string() {
             //returns the name() concatenated with area()
+            
             return (name() + " with area " + area());
         }
 };
