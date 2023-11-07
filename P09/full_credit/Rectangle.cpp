@@ -7,10 +7,10 @@ Rectangle::Rectangle(double height, double width)
 
 //override this
 std::string Rectangle::name() {
-
+    return (_height + " by " + _width + " Rectangle with area " + area());
 }
 
 //override this
 double Rectangle::area() {
-    
+    return (_height*_width);
 }
