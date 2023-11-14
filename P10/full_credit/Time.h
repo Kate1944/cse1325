@@ -15,11 +15,13 @@ class Time : public Time {
         bool operator<=(Time& time);
         bool operator>=(Time& time);
 
-        friend std::ostream& operator<<(ostream& ost, Time& time);
-        friend std::istream& operator>>(istream& ist, Time& time);
+        friend std::ostream& operator<<(std::ostream& ost, Time& time); //const?
+        friend std::istream& operator>>(std::istream& ist, Time& time);
 
 
     private:
+        void rationalize();
+
         int _hour;
         int _minute;
         int _second;
