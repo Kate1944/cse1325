@@ -1,7 +1,7 @@
 #ifndef __TIME_H
 #define __TIME_H
 
-class Time : public Time {
+class Time{
     public:
         Time(int hour, int minute, int second);
         Time operator+(Time time);
@@ -21,6 +21,7 @@ class Time : public Time {
 
     private:
         void rationalize();
+        int compare(Time time);
 
         int _hour;
         int _minute;

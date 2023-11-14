@@ -3,7 +3,47 @@
 #include <iomanip>
 
 Time::Time(int hour, int minute, int second) : 
-    _hour(hour), _minute(minute), _second(second) {}
+    _hour{hour}, _minute(minute), _second{second} {}
+
+int compare(Time time) {
+    if(_hour < time._hour) return -1;
+    if(_hour > time._hour) return 1;
+    if(_minute < time._minute) return -1;
+    if(_minute > time._minute) return 1;
+    if(_second < time._second) return -1;
+    if(_second > time._second) return 1;
+}
+
+inline bool operator==(const Time& time) {
+    return (compare(time) == 0);
+}
+
+inline bool operator!=(const Time& time) {
+    return (compare(time) !=0);
+}
+inline bool operator<(const Time& time) {
+    return (compare(time) < 0);
+}
+inline bool operator>(const Time& time) {
+    return (compare(time) > 0);
+}
+inline bool operator<=(const Time& time) {
+    return (compare(time) <= 0);
+}
+inline bool operator>=(const Time& time) {
+    return (compare(time) >= 0);
+}
+
+Time operator+(Time time) {
+    return time + time;
+}
+
+/*Time& operator++(Time& time) {
+    Time time {*this};
+    ++*this;
+    return time;
+
+} */
 
 std::ostream& operator<<(std::ostream& ost, Time& time) {
     ost << std::setfill('0') << time._hour << ":" << 
