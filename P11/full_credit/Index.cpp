@@ -4,7 +4,7 @@
 #include <set>
 
 typedef std::string Word;
-typedef std::set Locations;
+typedef std::set<Location> Locations;
 
 
 void add_word(Word word, std::string filename, int line) {

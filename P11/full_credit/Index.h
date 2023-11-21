@@ -3,6 +3,10 @@
 
 #include <iostream>
 #include <map>
+#include <set>
+
+typedef std::string Word;
+typedef std::set<Location> Locations;
 
 class Index {
     public:
