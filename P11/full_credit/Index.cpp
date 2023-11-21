@@ -8,7 +8,7 @@ typedef std::set<Location> Locations;
 
 
 void add_word(Word word, std::string filename, int line) {
-
+    //unsure how to implement
 }
 
 typedef std::map<Word, Locations> Index;
